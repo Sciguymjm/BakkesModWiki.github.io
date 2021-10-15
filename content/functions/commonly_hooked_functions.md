@@ -16,3 +16,11 @@ This is a list of functions that we use regularly, as well as when they fire. We
 `"Function TAGame.GameEvent_Soccar_TA.EventMatchEnded"` Happens at the end of a match when the podium is shown. If someone quits early it is not called
 
 `"Function TAGame.GFxData_MainMenu_TA.MainMenuAdded"` Happens when the main menu is opened, either through booting the game or leaving a mode
+
+`"Function GameEvent_TA.Countdown.BeginState"` Happens when a match countdown begins or at the beginning/reset of freeplay
+
+`"Function TAGame.Ball_TA.OnHitGoal"` Happens when a goal is scored
+
+`"Function TAGame.GameEvent_Soccar_TA.EventMatchEnded"` Happens when a game ends and is sent to the after-match scoreboard. The caller is a [ServerWrapper](/bakkesmod_api/Classes/Wrappers/GameEvent/ServerWrapper/).
+
+`"Function TAGame.GameEvent_Soccar_TA.Destroyed"` Happens when the user quits an active game. The caller is a [ServerWrapper](/bakkesmod_api/Classes/Wrappers/GameEvent/ServerWrapper/).
